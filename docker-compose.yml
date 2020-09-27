@@ -18,7 +18,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
   procrast-api:
-    image: ismacaulay/procrast-api
+    image: ismacaulay/procrast-api:0.1.2
     restart: always
     depends_on:
       - procrastdb
