@@ -10,7 +10,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
   userdb:
-    image: ismacaulay/userdb:0.1.0
+    image: ismacaulay/userdb:0.1.1
     volumes:
       - ./data/userdb/pgdata:/var/lib/postgresql/data
     environment:
@@ -18,7 +18,7 @@ services:
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
       POSTGRES_DB: ${POSTGRES_DB}
   procrast-api:
-    image: ismacaulay/procrast-api:0.1.2
+    image: ismacaulay/procrast-api:0.1.3
     restart: always
     depends_on:
       - procrastdb
